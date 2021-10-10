@@ -1,7 +1,7 @@
-all: Paste
+all: paste
 
 .PHONY:
-Paste: Paste/index.ts
+paste:
 	cd Paste && npm i && tsc
 	echo '#! /usr/bin/env node' > /usr/local/bin/paste
 	cat Paste/index.js >> /usr/local/bin/paste
